@@ -1,0 +1,17 @@
+<!--
+<div *ngFor="let toilette of toilettes">
+    <div>Toilette {{toilette.nom}}</div>
+    <div>Mobilite Reduite  {{toilette.accessible_pmr}}</div>
+    <div>Proprietaire {{toilettes.proprietaire}}</div>
+    <div>Exploite par {{toilette.exploitant}}</div>
+    <div>nettoiement {{toilette.nettoiement}}</div>
+    <div>Heure d'ouuverture {{toilette.horaire_d_ouverture}}</div>
+</div>-->
+<mat-card *ngFor="let toilette of toilettes" class="card-body">
+    <span style="font-weight: bold;"> Toilette {{toilette.nom}} </span>
+    <span style="float: right;">{{toilette.horaire_d_ouverture}}</span>
+    <br/>
+</mat-card>
+
+
+
